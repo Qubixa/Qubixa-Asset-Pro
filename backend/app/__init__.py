@@ -9,7 +9,7 @@ def create_app():
     app.config.from_object(Config)
 
     db.init_app(app)
-    jwt.init_app(app)
+    # jwt.init_app(app)
     swagger.init_app(app)
 
     register_routes(app)
